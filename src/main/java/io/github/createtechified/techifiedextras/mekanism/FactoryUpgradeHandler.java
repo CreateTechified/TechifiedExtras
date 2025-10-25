@@ -41,7 +41,12 @@ public class FactoryUpgradeHandler {
             new TierStep("emextras:supreme_quantum_alloying_", "emextras:cosmic_alloying_", rl("mekanism_extras", "cosmic_tier_installer")),
             new TierStep("emextras:cosmic_alloying_", "emextras:cosmic_dense_alloying_", rl("evolvedmekanism", "dense_tier_installer")),
             new TierStep("emextras:cosmic_dense_alloying_", "emextras:infinite_alloying_", rl("mekanism_extras", "infinite_tier_installer")),
-            new TierStep("emextras:infinite_alloying_", "emextras:infinite_multiversal_alloying_", rl("evolvedmekanism", "multiversal_tier_installer"))
+            new TierStep("emextras:infinite_alloying_", "emextras:infinite_multiversal_alloying_", rl("evolvedmekanism", "multiversal_tier_installer")),
+            // allow evmek to emextras
+            new TierStep("evolvedmekanism:overclocked_", "emextras:absolute_overclocked_", rl("mekanism_extras", "absolute_tier_installer")),
+            new TierStep("evolvedmekanism:quantum_", "emextras:supreme_quantum_", rl("mekanism_extras", "supreme_tier_installer")),
+            new TierStep("evolvedmekanism:dense_", "emextras:cosmic_dense_", rl("mekanism_extras", "cosmic_tier_installer")),
+            new TierStep("evolvedmekanism:multiversal_", "emextras:infinite_multiversal_", rl("mekanism_extras", "infinite_tier_installer"))
             );
 
     private static ResourceLocation rl(String namespace, String path) {
